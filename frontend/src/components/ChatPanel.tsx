@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, KeyboardEvent } from "react";
+import { useState, useRef, useEffect, KeyboardEvent } from "react";
 import { Send, Trash2, Bot, AlertTriangle } from "lucide-react";
 import ChatMessageComponent from "./ChatMessage";
 import { ChatMessage, Document } from "../types";

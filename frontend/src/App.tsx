@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BookOpen } from "lucide-react";
 import DocumentPanel from "./components/DocumentPanel";
 import ChatPanel from "./components/ChatPanel";
