@@ -1,7 +1,11 @@
 import axios from "axios";
 import { Document, ChatMessage, Source } from "./types";
 
-const api = axios.create({ baseURL: "" });
+// In dev: Vite proxy handles routing to localhost:8000
+// In production: use the deployed backend URL
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
+
+const api = axios.create({ baseURL: API_BASE });
 
 export async function uploadDocument(file: File): Promise<{
   doc_id: string;
