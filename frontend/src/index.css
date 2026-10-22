@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+}
+
+@layer utilities {
+  .prose-chat {
+    @apply text-sm leading-relaxed;
+  }
+
+  .prose-chat p {
+    @apply mb-2 last:mb-0;
+  }
+
+  .prose-chat ul {
+    @apply list-disc pl-4 mb-2 space-y-1;
+  }
+
+  .prose-chat ol {
+    @apply list-decimal pl-4 mb-2 space-y-1;
+  }
+
+  .prose-chat code {
+    @apply bg-slate-800 rounded px-1 py-0.5 text-xs font-mono text-brand-300;
+  }
+
+  .prose-chat pre {
+    @apply bg-slate-800 rounded-lg p-3 overflow-x-auto mb-2;
+  }
+
+  .prose-chat pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose-chat strong {
+    @apply text-white font-semibold;
+  }
+
+  .prose-chat blockquote {
+    @apply border-l-2 border-brand-500 pl-3 italic text-slate-400;
+  }
+}

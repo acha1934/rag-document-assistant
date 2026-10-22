@@ -1,0 +1,30 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+*.egg-info/
+
+# Vector DB & uploads (runtime data, not source)
+chroma_db/
+uploads/
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Models (large binary files)
+*.gguf
+*.bin
+*.safetensors
